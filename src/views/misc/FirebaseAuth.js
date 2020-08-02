@@ -32,7 +32,7 @@ class FirebaseAuth extends React.Component {
       error: null,
     })
 
-    if (auth != null && auth.email === 'zachdt@gmail.com') {
+    if (auth != null && auth.email === 'zachdt@gmail.com' || auth.email === 'beniboo2@gmail.com') {
       this.setState({
         isAdmin: true
       })

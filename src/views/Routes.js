@@ -13,6 +13,7 @@ import EventEdit from './posts/EventEdit'
 import Event from './posts/Event'
 import Error from './misc/Error'
 import Courses from './courses/Courses'
+import Resources from './resources/Resources'
 
 import Search from './search/Search'
 
@@ -23,6 +24,7 @@ const Routes = () => (
     <Route path="/account" component={Account} />
     <Route path="/about" component={About} />
     <Route path="/courses" component={Courses} />
+    <Route path="/resources" component={Resources} />
 
     <Route path="/new" component={EventNew} />
 

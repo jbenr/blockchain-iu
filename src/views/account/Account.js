@@ -12,7 +12,7 @@ import {
 } from '../../styles/layout'
 
 const event = (auth) => {
-  if (auth.email === 'zachdt@gmail.com') {
+  if (auth.email === 'zachdt@gmail.com' || auth.email === 'beniboo2@gmail.com') {
     return <InternalLink to="/new">New</InternalLink>
   } else {
     return 

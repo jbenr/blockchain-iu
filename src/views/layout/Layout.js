@@ -81,11 +81,17 @@ const Layout = ({children}) => {
           <NavLink className={classes.events} activeStyle={{ textDecoration: 'underline' }} to="/about">
             <span>About</span>
           </NavLink>
+          <NavLink className={classes.events} activeStyle={{ textDecoration: 'underline' }} to="/blog">
+            <span>Blog</span>
+          </NavLink>
           <NavLink className={classes.events} activeStyle={{ textDecoration: 'underline' }} to="/events">
             <span>Events</span>
           </NavLink>
           <NavLink className={classes.events} activeStyle={{ textDecoration: 'underline' }} to="/courses">
             <span>Courses</span>
+          </NavLink>
+          <NavLink className={classes.events} activeStyle={{ textDecoration: 'underline' }} to="/resources">
+            <span>Resources</span>
           </NavLink>
           <FirebaseAuth>
             { ({isLoading, error, auth}) => {
@@ -128,7 +134,8 @@ const Layout = ({children}) => {
       <hr />
 
         © {(new Date()).getFullYear()}<br/>
-        <p>by <a className={classes.noLink} href="https://github.com/zachdt" target="_blank">zachdt</a></p>
+        <p>by <a className={classes.noLink} href="https://github.com/zachdt" target="_blank">zachdt</a>and
+              <a className={classes.noLink} href="https://github.com/jbenr" target="_blank">jbenr</a></p>
       </Footer>
 
     </HeaderFooterWrapper>
